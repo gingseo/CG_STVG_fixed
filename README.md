@@ -6,7 +6,9 @@ https://github.com/HengLan/CGSTVG/tree/main?tab=readme-ov-file
 에서 레즈넷, vidswin은 받고, roberta는
 transformers-cli download roberta-base --cache-dir /workspace/CGSTVG/model_zoo/
 로 다운.
-
+mkdir -p /workspace/CGSTVG/model_zoo
+cd /workspace/CGSTVG/model_zoo
+huggingface-cli download roberta-base --local-dir roberta-base
 ./train.sh 실행시 학습됨.
 
 원본 코드: https://github.com/HengLan/CGSTVG/tree/main?tab=readme-ov-file
